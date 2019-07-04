@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Charm", cursive;
+  user-select: none;
+}
+
+/* SCROLLBAR MODS */
+
+/* chrome */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* mozilla */
+
+::-moz-scrollbar {
+  width: 7px;
+}
+
+::-moz-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-moz-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-button {
+  display: none;
+}
+
+/* opera */
+
+::-o-scrollbar {
+  width: 7px;
+}
+
+::-o-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-o-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+::-o-scrollbar-button {
+  display: none;
+}
+
+/* explorer */
+
+::-ms-scrollbar {
+  width: 7px;
+}
+
+::-ms-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-ms-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+::-ms-scrollbar-button {
+  display: none;
+}
+
+/* ELEMENTS */
+
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  overflow-x: hidden;
+}
+
+/* unit conversion */
+
+.converters {
+  display: flex;
+  justify-content: space-around;
+}
+
+section h3 {
+  letter-spacing: 1px;
+  transition: 250ms all;
+}
+
+section h3:hover {
+  color: maroon;
+  text-decoration: underline;
+}
+
+.kelvin,
+.knt,
+.cels,
+.km,
+.ms,
+.fahr,
+button[id] {
+  margin: 7px 0;
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: black;
+  /* background-color: white; */
+  transition: 450ms all;
+}
+
+.kelvin:hover,
+.knt:hover,
+.cels:hover,
+.fahr:hover,
+.km:hover,
+.ms:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 0 7px #666;
+  transform: rotateZ(3deg);
+}
+
+/* page */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* h1 title + anim */
+
+.title {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  animation: title-wobble 2500ms infinite;
+}
+
+@keyframes title-wobble {
+  25% {
+    transform: translateX(-20px);
+  }
+  75% {
+    transform: translateX(20px);
+  }
+}
+
+/* Snippet days */
+
+.day-display {
+  cursor: pointer;
+  padding: 7px 9px;
+  margin: 15px;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+  transition: 300ms all ease;
+  width: 300px;
+  height: 700px;
+}
+
+.day-name {
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.day p,
+figcaption {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.wind-speed,
+.temperature,
+.day-type {
+  text-align: center;
+}
+
+.arrow {
+  display: block;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+}
+
+.view-button {
+  display: block;
+  width: 100%;
+}
+
+.converters {
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  margin: 3em;
+}
+
+section button {
+  display: block;
+  width: 100%;
+}
+
+/* close button */
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  color: red;
+  font-size: 2em;
+  padding: 7px 9px;
+  display: none;
+}
+
+.kelvin,
+.cels,
+.km,
+.ms,
+button[id] {
+  margin: 7px 0;
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  transition: 450ms all;
+}
+
+.kelvin:hover,
+.cels:hover,
+.km:hover,
+.ms:hover,
+button[id]:hover {
+  color: white;
+  background-color: black;
+}
+
+.big-day {
+  /* display: "block"; */
+  position: absolute;
+  width: 98vw;
+  height: 95%;
+  z-index: 2;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+
+.big-day button {
+  display: none;
+}

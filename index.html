@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/stylesheet-directions.css"
+    />
+    <!-- direction sprite style -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet-forecast.css" />
+    <!-- forecast sprite style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Charm font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Charm&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <h1 class="title">Weather app</h1>
+    <aside class="converters">
+      <section class="temp-box">
+        <h3>Additional temperature settings</h3>
+        <button class="kelvin" onclick="kelv()">Calculate Kelvin</button>
+        <button class="fahr" onclick="fahr()">Calculate Fahrenheit</button>
+        <button class="cels" onclick="celsius()">Return Celsius</button>
+      </section>
+      <section class="speed-box">
+        <h3>Additional wind speed settings</h3>
+        <button class="km" onclick="km()">Wind speed in km/h</button>
+        <button class="knt" onclick="knots()">Wind speed in knots</button>
+        <button class="ms" onclick="ms()">Revert to m/s</button>
+      </section>
+    </aside>
+    <main>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="monday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="tuesday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="wednesday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="thursday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="friday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="saturday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <article class="day-display">
+        <span class="close" onclick="minimize(this.parentElement)"
+          >&times;</span
+        >
+        <h2 class="day-name"></h2>
+        <p class="day-type"></p>
+        <i class="spritefc"> </i>
+        <p class="temperature"></p>
+        <p class="wind-speed"></p>
+        <figure class="wind-dir">
+          <figcaption class="direction"></figcaption>
+          <i class="sprite"> </i>
+        </figure>
+        <button
+          class="view-button"
+          id="sunday"
+          onclick="enlarge(this.parentElement)"
+        ></button>
+      </article>
+      <script src="script.js" charset="utf-8"></script>
+    </main>
+  </body>
+</html>

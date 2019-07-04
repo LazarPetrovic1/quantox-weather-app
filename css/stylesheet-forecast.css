@@ -1,0 +1,42 @@
+.spritefc {
+    background-image: url('../assets/spritesheet-forecast.png');
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+}
+
+.spritefc-mist {
+    width: 225px;
+    height: 225px;
+    background-position: -5px -5px;
+}
+
+.spritefc-raining {
+    width: 225px;
+    height: 225px;
+    background-position: -240px -5px;
+}
+
+.spritefc-cloud {
+    width: 225px;
+    height: 225px;
+    background-position: -5px -240px;
+}
+
+.spritefc-snowy {
+    width: 225px;
+    height: 225px;
+    background-position: -240px -240px;
+}
+
+.spritefc-sun {
+    width: 225px;
+    height: 225px;
+    background-position: -475px -5px;
+}
+
+.spritefc-windy {
+    width: 225px;
+    height: 225px;
+    background-position: -475px -240px;
+}
