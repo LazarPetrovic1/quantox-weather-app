@@ -103,6 +103,10 @@ body {
   justify-content: space-around;
 }
 
+section {
+  margin: 3em;
+}
+
 section h3 {
   letter-spacing: 1px;
   transition: 250ms all;
@@ -111,6 +115,11 @@ section h3 {
 section h3:hover {
   color: maroon;
   text-decoration: underline;
+}
+
+section button {
+  display: block;
+  width: 100%;
 }
 
 .kelvin,
@@ -124,8 +133,18 @@ button[id] {
   padding: 7px 12px;
   border-radius: 5px;
   color: black;
-  /* background-color: white; */
   transition: 450ms all;
+}
+
+.kelvin:hover,
+.cels:hover,
+.km:hover,
+.ms:hover,
+.fahr:hover,
+.knt:hover,
+button[id]:hover {
+  color: white;
+  background-color: black;
 }
 
 .kelvin:hover,
@@ -170,7 +189,7 @@ main {
 
 .day-display {
   cursor: pointer;
-  padding: 7px 9px;
+  padding: 0 9px;
   margin: 15px;
   border: 3px solid rgba(0, 0, 0, 0.4);
   transition: 300ms all ease;
@@ -188,7 +207,6 @@ main {
 .day p,
 figcaption {
   text-align: center;
-  padding: 5px 0;
 }
 
 .wind-speed,
@@ -215,21 +233,7 @@ figcaption {
   transform: translateY(5px);
 }
 
-.converters {
-  display: flex;
-  justify-content: space-around;
-}
-
-section {
-  margin: 3em;
-}
-
-section button {
-  display: block;
-  width: 100%;
-}
-
-/* close button */
+/* close button & single day display */
 
 .close {
   position: absolute;
@@ -241,30 +245,7 @@ section button {
   display: none;
 }
 
-.kelvin,
-.cels,
-.km,
-.ms,
-button[id] {
-  margin: 7px 0;
-  padding: 7px 12px;
-  border-radius: 5px;
-  color: black;
-  background-color: white;
-  transition: 450ms all;
-}
-
-.kelvin:hover,
-.cels:hover,
-.km:hover,
-.ms:hover,
-button[id]:hover {
-  color: white;
-  background-color: black;
-}
-
 .big-day {
-  /* display: "block"; */
   position: absolute;
   width: 98vw;
   height: 95%;
