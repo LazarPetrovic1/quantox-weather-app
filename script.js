@@ -90,7 +90,7 @@ weatherData.days.forEach(el => {
   path.push(el.path);
 });
 
-// work - log;
+// work - log
 // console.log(days);
 // console.log(temp);
 // console.log(windDirection);
@@ -99,14 +99,14 @@ weatherData.days.forEach(el => {
 // console.log(type);
 // console.log(path);
 
-let dayName = document.getElementsByClassName("day-name");
-let dayType = document.getElementsByClassName("day-type");
-let img = document.getElementsByClassName("spritefc");
-let tempPar = document.getElementsByClassName("temperature");
-let speed = document.getElementsByClassName("wind-speed");
-let direction = document.getElementsByClassName("direction");
-let arrow = document.getElementsByClassName("sprite");
-let seeDay = document.getElementsByClassName("view-button");
+let dayName = document.getElementsByClassName("day-name"),
+  dayType = document.getElementsByClassName("day-type"),
+  img = document.getElementsByClassName("spritefc"),
+  tempPar = document.getElementsByClassName("temperature"),
+  speed = document.getElementsByClassName("wind-speed"),
+  direction = document.getElementsByClassName("direction"),
+  arrow = document.getElementsByClassName("sprite"),
+  seeDay = document.getElementsByClassName("view-button");
 
 function passValues() {
   for (let i = 0; i < dayName.length; i++) {
@@ -182,7 +182,6 @@ function ms() {
     speed[i].innerHTML = `Wind speed: ${windSpeed[i]} m/s`;
   }
 }
-
 
 // EVENT LISTENERS
 
