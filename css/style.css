@@ -205,8 +205,14 @@ figcaption {
 }
 
 .view-button {
+  outline: none;
   display: block;
   width: 100%;
+  box-shadow: 0 5px 10px black;
+}
+
+.view-button:active {
+  transform: translateY(5px);
 }
 
 .converters {
