@@ -183,9 +183,6 @@ function ms() {
   }
 }
 
-for (let i = 0; i < days.length; i++) {
-  days[i];
-}
 
 // EVENT LISTENERS
 
